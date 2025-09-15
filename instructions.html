@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instruções Escritas - MedNet Osasco</title>
+  <meta name="description" content="Guia escrito da Plataforma MedNet Osasco, com passo a passo detalhado para cadastro, atendimentos, exames, desligamentos e gestão de colaboradores.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header-container">
+    <div class="logo-title">
+      <a href="index.html#inicio">
+        <img src="iml/LOGO_INICIAL.png" alt="Logo MedNet" class="logo">
+      </a>
+      <h1>MedNet Osasco</h1>
+    </div>
+  </header>
+
+  <!-- Botão hambúrguer para mobile -->
+  <button class="menu-toggle" aria-label="Abrir menu">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="index.html#inicio"><i class="fa-solid fa-house"></i><span>Início</span></a></li>
+      <li><a href="index.html#cadastro"><i class="fa fa-user-plus"></i><span>Cadastrar Funcionários</span></a></li>
+      <li><a href="index.html#atendimento"><i class="fa fa-headset"></i><span>Abrir Atendimento</span></a></li>
+      <li><a href="index.html#aso"><i class="fa fa-file-medical"></i><span>ASO</span></a></li>
+      <li><a href="index.html#cat"><i class="fa fa-exclamation-triangle"></i><span>CAT</span></a></li>
+      <li><a href="index.html#atestado"><i class="fa-solid fa-certificate"></i><span>Atestado</span></a></li>
+      <li><a href="index.html#colaborador"><i class="fa-solid fa-handshake"></i><span>Área do Colaborador</span></a></li>
+      <li><a href="index.html#inclusao-de-funcao"><i class="fa-solid fa-list-check"></i><span>Inclusão de Função</span></a></li>
+      <li><a href="index.html#tutoriais-videos"><i class="fa-solid fa-video"></i><span>Vídeo Tutoriais</span></a></li>
+      <li class="whatsapp-item"><a href="https://wa.me/551146203933" target="_blank"><img src="iml/whatslaterial.png" alt="WhatsApp" class="whatsapp-icon"><span>WhatsApp</span></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="header-section">
+      <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Pesquisar nas instruções..." onkeyup="searchInstructions()">
+      </div>
+      <div class="indice-flutuante">
+        <a href="#cadastrar-colaborador">Cadastrar Colaborador</a>
+        <a href="#estagiario-socio">Estagiário/Sócio/PJ</a>
+        <a href="#atualizar-cadastro">Atualizar Cadastro</a>
+        <a href="#gerar-atendimento">Gerar Atendimento</a>
+        <a href="#mudanca-funcao">Mudança de Função</a>
+        <a href="#desligamento">Desligamento</a>
+        <a href="#cronograma-exames">Cronograma Exames</a>
+        <a href="#ordem-servico">Ordem de Serviço</a>
+        <a href="#baixar-aso">Baixar ASO</a>
+        <a href="video-tutoriais.html">Vídeos Tutoriais</a>
+        <a href="#retorno-ao-trabalho">Retorno ao Trabalho</a>
+      </div>
+    </section>
+
+    <section id="instrucoes-escritas">
+      <h2>Passo a Passo Escrito – Plataforma Web MedNet</h2>
+      <p>Bem-vindo(a) ao guia completo e fácil de seguir para usar a <span class="strong">Plataforma Web MedNet.</span></p> 
+
+
+      <h3 id="cadastrar-colaborador">Cadastrar um Novo Colaborador</h3>
+      <p>Adicione novos colaboradores à plataforma com facilidade seguindo este guia passo a passo:</p>
+      <ul>
+        <li>Entre na <span class="strong">Plataforma Web MedNet</span> e clique em <span class="highlight">Novo Funcionário</span> para começar.</li>
+        <li>Preencha todos os campos obrigatórios (marcados com <strong>*</strong>) com cuidado e atenção aos detalhes.</li>
+        <li>Clique em <span class="highlight">Salvar</span> para finalizar o cadastro com sucesso.</li>
+        <li><span class="strong">Dica Útil:</span> Se o colaborador já trabalha na empresa, adicione a matrícula eSocial, o código da categoria e a data exata de admissão. Para novos colaboradores, clique em <span class="highlight">Continuar</span> para prosseguir.</li>
+      </ul>
+
+      <h3 id="estagiario-socio">Estagiário, Sócio-Proprietário ou PJ</h3>
+      <p>Esses tipos de cadastro não são enviados ao eSocial. Configure-os da seguinte maneira:</p>
+      <ul>
+        <li>No campo <span class="strong">Matrícula eSocial</span>, insira <span class="highlight">PJ</span> ou <span class="highlight">Estagiário</span>, dependendo da situação.</li>
+        <li>No campo <span class="strong">Código da Categoria eSocial</span>, escolha o código correto:
+          <ul>
+            <li><span class="highlight">Sócio-Proprietário:</span> 701, 723, 741, etc.</li>
+            <li><span class="highlight">Estagiário:</span> 901.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 id="atualizar-cadastro">Atualizar Cadastro de Funcionários</h3>
+      <p>Mantenha os dados dos funcionários sempre atualizados e precisos. <span class="strong">Atenção:</span> Problemas comuns incluem a falta de matrícula eSocial, código da categoria ou data de admissão.</p>
+      <ul>
+        <li>Acesse a <span class="strong">Plataforma Web</span> e navegue até <span class="highlight">Funcionário > Cadastro de Funcionários</span>.</li>
+        <li>Clique no nome do funcionário que precisa de atualização.</li>
+        <li>Adicione ou corrija os dados ausentes: matrícula eSocial, código da categoria e data de admissão.</li>
+        <li>Confira se todos os funcionários ativos estão cadastrados. Se não, cadastre-os usando o passo anterior.</li>
+      </ul>
+
+      <h3 id="gerar-atendimento">Gerar um Atendimento</h3>
+      <p>Crie atendimentos de forma rápida e bem organizada com estes passos:</p>
+      <ul>
+        <li>Acesse a <span class="strong">Plataforma Web</span> e clique em <span class="highlight">Abertura de Atendimento</span>.</li>
+        <li>Selecione o nome do colaborador na lista disponível.</li>
+        <li>Escolha as opções certas:
+          <ul>
+            <li>Tipo de atendimento desejado.</li>
+            <li>Contrato correspondente ao colaborador.</li>
+            <li>Local onde o atendimento será realizado.</li>
+          </ul>
+        </li>
+        <li>Clique em <span class="highlight">Gerar Atendimento</span> para confirmar.</li>
+        <li>Baixe a guia gerada e revise os dados. <span class="strong">Nota:</span> Não é necessário imprimir a guia, apenas verifique!</li>
+      </ul>
+
+      <h3 id="mudanca-funcao">Mudança de Função</h3>
+      <p>Atualize a função de um colaborador de maneira simples e eficiente:</p>
+      <ul>
+        <li>Acesse a <span class="strong">Plataforma Web</span> e vá para <span class="highlight">Funcionário > Cadastro de Funcionários</span>.</li>
+        <li>Clique no nome do funcionário a ser atualizado.</li>
+        <li>No quadro <span class="strong">Setor/Função</span>, selecione a nova função e clique em <span class="highlight">Salvar</span>.</li>
+        <li><span class="strong">Atenção:</span> Se houver mudança de riscos, abra um kit e envie o funcionário para o <span class="highlight">Exame de Mudança de Risco</span>. Se não houver, o exame não é necessário.</li>
+      </ul>
+
+      <h3 id="desligamento">Desligamento de Funcionário (Sem Exame Demissional)</h3>
+      <p>Desligue um funcionário sem exame demissional seguindo este processo:</p>
+      <ul>
+        <li>Acesse a <span class="strong">Plataforma Web</span> e vá para <span class="highlight">Funcionário > Cadastro de Funcionários</span>.</li>
+        <li>Clique no nome do funcionário a ser desligado.</li>
+        <li>Navegue até a aba <span class="strong">Status</span> e clique em <span class="highlight">Inativar</span> para concluir.</li>
+      </ul>
+
+      <h3 id="cronograma-exames">Extrair Cronograma de Exames Vencidos ou a Vencer</h3>
+      <p>Gerencie os exames dos colaboradores com facilidade:</p>
+      <ul>
+        <li>Acesse a <span class="strong">Plataforma Web</span> e vá para <span class="highlight">Funcionário > Cronograma de Exames</span>.</li>
+        <li>Clique em <span class="highlight">Exportar Excel</span> para baixar o arquivo com os dados.</li>
+        <li>Revise as datas de exames vencidos e a vencer com atenção.</li>
+        <li>Certifique-se de que todos os funcionários ativos estão cadastrados. Se não, cadastre-os.</li>
+      </ul>
+
+      <h3 id="ordem-servico">Extrair Ordem de Serviço por Função</h3>
+      <p>Baixe a Ordem de Serviço de forma prática e rápida:</p>
+      <ul>
+        <li>Acesse a <span class="strong">Plataforma Web</span> e vá para <span class="highlight">Funcionário > Cadastro de Funcionários</span>.</li>
+        <li>Clique no nome do funcionário desejado.</li>
+        <li>Navegue até a aba <span class="strong">Ordem de Serviço</span>.</li>
+        <li>Selecione o <span class="strong">Contrato/Unidade</span> correspondente.</li>
+        <li>Clique em <span class="highlight">Download</span> para obter o arquivo em PDF.</li>
+      </ul>
+
+      <h3 id="baixar-aso">Baixar ASO</h3>
+      <p>Acesse os ASOs dos colaboradores de maneira fácil:</p>
+      <ul>
+        <li>Acesse a <span class="strong">Plataforma Web</span> e vá para <span class="highlight">Funcionário > Visualização de Atendimentos</span>.</li>
+        <li>Se o ASO desejado não estiver disponível, siga estes passos adicionais:
+          <ul>
+            <li>Vá para <span class="highlight">Cadastro de Funcionários</span>.</li>
+            <li>Clique no nome do colaborador.</li>
+            <li>Navegue até a aba <span class="highlight">Atendimento</span> para localizar o ASO.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 id="retorno-ao-trabalho">Exame de Retorno ao Trabalho</h3>
+      <p> É feito sempre que o colaborador ficar por 30 dias ou mais afastado por motivo de saúde.</p>
+        <p>Importante:</p>
+         <li>Oriente seu funcionário a comparecer para o exame de retorno ao trabalho no 1º dia útil após a cessação do benefício previdenciário, munido do último "COMUNICADO DE DECISÃO DO INSS" e de eventuais laudos/exames do médico assistente do colaborador;</li>
+          <li>Durante o afastamento a empresa deve se comunicar com o colaborador e buscar saber se ele está se recuperando bem. Se não estiver recuperado, recomende-o a entrar no app "Meu INSS", ligar no 135 ou ir pessoalmente à agência do INSS e fazer o Pedido de Prorrogacão de Beneficio 15 DIAS ANTES de acabar o beneficio. O INSS sempre prorroga e isso evita transtornos para a empresa e falta de pagamento de beneficio ao funcionário.</li>
+       </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+<footer>
+    <div class="footer-content">
+        <ul class="email-list">
+            <li>Segurança: <a href="mailto:seguranca@mednet-osasco.com.br">seguranca@mednet-osasco.com.br</a></li>
+            <li>Comercial: Flávia -  <a href="mailto:comercial01@mednet-osasco.com.br">comercial01@mednet-osasco.com.br</a></li>
+            <li>Atendimento: <a href="mailto:at@mednet-osasco.com.br">at@mednet-osasco.com.br</a></li>
+            <li>Sac: <a href="mailto:sac@mednet-osasco.com.br">sac@mednet-osasco.com.br</a></li>
+        </ul>
+        <div class="social-links">
+            <p>Siga-nos nas redes sociais</p>
+            <div class="social-icons-wrapper">
+                <a href="https://www.instagram.com/mednetosasco?igsh=b2FmdXM3MjNtcGpi" target="_blank">
+                    <img src="iml/instagram.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/company/mednet-osasco" target="_blank">
+                    <img src="iml/linkedin.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/people/Grupo-MedNet/100089579633795/" target="_blank">
+                    <img src="iml/facebook.png" alt="Facebook" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <p>© 2025 MedNet Osasco - Todos os direitos reservados.</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
