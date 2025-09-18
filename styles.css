@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +14,7 @@ body {
   flex-direction: column;
 }
 
-/* HEADER */
+
 .header-container {
   background-color: #072541;
   padding: 0.5rem 1rem;
@@ -53,7 +52,6 @@ body {
   padding-left: 50px;
 }
 
-/* BOTÃO HAMBÚRGUER */
 .menu-toggle {
   display: none;
   background: none;
@@ -67,11 +65,10 @@ body {
   cursor: pointer;
 }
 
-/* TYPEWRITER EFFECT */
+
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 0.15em solid #005baa;
   animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
 }
 
@@ -85,18 +82,18 @@ body {
   50% { border-color: #005baa; }
 }
 
-/* SIDEBAR */
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   width: 60px;
   height: 100%;
-  background: linear-gradient(135deg, #9fa7ad 0%, #9fa7ad 70%, #00aaff 80%, #8a2be2 100%);
+  background: linear-gradient(135deg, #778fa1 0%, #8db9db 70%, #00aaff 80%, #8a2be2 100%);
   background-size: 200% 200%;
-  animation: slideGradient 60s ease infinite;
+  animation: slideGradient 25s ease infinite;
   overflow-x: hidden;
-  transition: width 0.3s ease;
+  transition: width 0.5s ease;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   z-index: 1000;
   display: flex;
@@ -190,7 +187,7 @@ body {
   100% { background-position: 0% 0%; }
 }
 
-/* MAIN CONTENT */
+
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -198,7 +195,7 @@ main {
   flex-grow: 1;
 }
 
-/* SECTIONS */
+
 section {
   background-color: #fff;
   padding: 1.5rem;
@@ -233,7 +230,7 @@ section a.mailto-link:hover {
   text-decoration: underline;
 }
 
-/* ADICIONADO: CLASSES PARA DESTAQUES */
+
 .strong {
   color: #ff6600;
   font-weight: bold;
@@ -246,7 +243,7 @@ section a.mailto-link:hover {
   font-weight: bold;
 }
 
-/* SEARCH */
+
 #search-container {
   margin-bottom: 1.5rem;
 }
@@ -265,7 +262,7 @@ section a.mailto-link:hover {
   border-color: #00aaff;
 }
 
-/* IFRAME */
+
 iframe {
   width: 100%;
   height: 315px;
@@ -275,7 +272,7 @@ iframe {
   margin-top: 1rem;
 }
 
-/* FOOTER */
+
 footer {
     text-align: center;
     padding: 0.8rem;
@@ -341,7 +338,8 @@ footer::before {
 
 footer .social-icon {
     height: 30px;
-    width: auto;
+    width: 40px;
+    object-fit: contain;
 }
 
 footer p:last-child {
@@ -352,7 +350,16 @@ footer p:last-child {
     z-index: 2;
 }
 
-/* RESPONSIVO */
+footer a {
+  color: #fff;         
+  text-decoration: none;  
+}
+
+footer a:hover {
+  color: #ccc;        
+}
+
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
