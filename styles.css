@@ -29,11 +29,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .logo {
+  position: fixed;
+  left: 1rem;
+  top: 0.5rem;
   height: 35px;
   width: auto;
   cursor: pointer;
@@ -45,7 +48,7 @@ body {
   color: #fcfcfc;
   flex-grow: 1;
   text-align: center;
-  margin: 0;
+  padding-left: 50px;
 }
 
 .menu-toggle {
@@ -87,7 +90,7 @@ body {
   background-size: 200% 200%;
   animation: slideGradient 25s ease infinite;
   overflow-x: hidden;
-  transition: width 0.3s ease;
+  transition: width 0.5s ease, transform 0.3s ease;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   z-index: 1000;
   display: flex;
@@ -111,7 +114,7 @@ body {
   z-index: 2;
 }
 
-.sidebar.open, .sidebar:hover {
+.sidebar:hover {
   width: 220px;
 }
 
@@ -171,7 +174,7 @@ body {
   filter: none;
 }
 
-.sidebar:not(.open):not(:hover) ul li a span {
+.sidebar:not(:hover) ul li a span {
   display: none;
 }
 
@@ -182,41 +185,34 @@ body {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   flex-grow: 1;
-  margin-left: 70px;
-  transition: margin-left 0.3s ease;
-}
-
-.sidebar.open ~ main {
-  margin-left: 230px;
 }
 
 section {
   background-color: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 section h2 {
   color: #ce9805;
   margin-bottom: 0.8rem;
-  font-size: 1.5rem;
 }
 
 section h3 {
   color: #0066cc;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-size: 1.2rem;
 }
 
 section p, section li {
   margin-bottom: 0.6rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 section a.mailto-link {
@@ -242,13 +238,13 @@ section a.mailto-link:hover {
 }
 
 #search-container {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #search-bar {
   width: 100%;
   padding: 0.8rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
@@ -261,7 +257,7 @@ section a.mailto-link:hover {
 
 iframe {
   width: 100%;
-  height: 200px;
+  height: 315px;
   border: none;
   border-radius: 8px;
   box-shadow: 0 1px 8px rgba(0,0,0,0.1);
@@ -296,7 +292,7 @@ footer::before {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -311,7 +307,7 @@ footer::before {
 }
 
 .email-list li {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin-bottom: 0.2rem;
   color: #ccc;
 }
@@ -327,19 +323,19 @@ footer::before {
 
 .social-icons-wrapper {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
 }
 
 footer .social-icon {
-  height: 25px;
-  width: 35px;
+  height: 30px;
+  width: 40px;
   object-fit: contain;
 }
 
 footer p:last-child {
   margin-top: 0.5rem;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -356,23 +352,22 @@ footer a:hover {
 
 .indice-flutuante {
   position: fixed;
-  top: 80px;
-  right: 10px;
+  top: 100px;
+  right: 20px;
   background-color: #f9f9f9;
-  padding: 8px 12px;
-  border-radius: 6px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   z-index: 999;
-  font-size: 0.85rem;
-  max-width: 200px;
+  font-size: 14px;
 }
 
 .indice-flutuante a {
   display: block;
   color: #333;
   text-decoration: none;
-  margin-bottom: 6px;
-  transition: color 0.2s ease;
+  margin-bottom: 8px;
+  transition: 0.2s ease;
 }
 
 .indice-flutuante a:hover {
@@ -389,6 +384,8 @@ footer a:hover {
     width: 220px;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
+    height: 100%;
+    flex-direction: column;
     padding-top: 60px;
   }
 
@@ -397,28 +394,25 @@ footer a:hover {
   }
 
   main {
-    margin-left: 0;
+    margin: 0 auto;
     margin-top: 60px;
-    padding: 0.8rem;
-  }
-
-  .sidebar.open ~ main {
-    margin-left: 0;
+    padding: 1rem;
   }
 
   .logo-title {
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 0 0.5rem;
+    justify-content: center;
+    gap: 1rem;
   }
 
   .logo {
+    position: static;
     height: 30px;
-    margin-left: 50px;
+    margin-left: 0;
   }
 
   .logo-title h1 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding-left: 0;
   }
 
   .indice-flutuante {
@@ -432,6 +426,15 @@ footer a:hover {
     gap: 0.8rem;
   }
 
+  .email-list, .social-links {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
   section h2 {
     font-size: 1.3rem;
   }
@@ -441,17 +444,25 @@ footer a:hover {
   }
 
   section p, section li {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  #search-bar {
+    font-size: 0.9rem;
+  }
+
+  iframe {
+    height: 200px;
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-    height: 25px;
+    height: 28px;
   }
 
   .logo-title h1 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   iframe {
@@ -470,6 +481,10 @@ footer a:hover {
     font-size: 1rem;
   }
 
+  section p, section li {
+    font-size: 0.85rem;
+  }
+
   .sidebar ul li a {
     font-size: 0.9rem;
   }
@@ -479,7 +494,15 @@ footer a:hover {
   }
 
   footer .social-icon {
-    height: 20px;
-    width: 30px;
+    height: 25px;
+    width: 35px;
+  }
+
+  .email-list li {
+    font-size: 0.85rem;
+  }
+
+  footer p:last-child {
+    font-size: 0.85rem;
   }
 }

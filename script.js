@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const targetId = this.getAttribute('href').substring(1);
@@ -8,11 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const header = document.querySelector('.header-container');
         const headerHeight = header ? header.offsetHeight : 0;
-        const sidebar = document.querySelector('.sidebar');
-        const sidebarHeight = (window.innerWidth <= 768 && sidebar) ? sidebar.offsetHeight : 0;
-        const offset = headerHeight + sidebarHeight;
-        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
         window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        const sidebar = document.querySelector('.sidebar');
+        if (sidebar && sidebar.classList.contains('open') && window.innerWidth <= 768) {
+          sidebar.classList.remove('open');
+        }
       }
     });
   });
@@ -52,5 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
       sidebar.classList.toggle('open');
     });
   }
-
 });
