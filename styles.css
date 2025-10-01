@@ -90,7 +90,7 @@ body {
   background-size: 200% 200%;
   animation: slideGradient 25s ease infinite;
   overflow-x: hidden;
-  transition: width 0.5s ease, transform 0.3s ease;
+  transition: width 0.5s ease;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   z-index: 1000;
   display: flex;
@@ -396,7 +396,7 @@ footer a:hover {
   main {
     margin: 0 auto;
     margin-top: 60px;
-    padding: 1rem;
+    padding: 0.8rem;
   }
 
   .logo-title {
@@ -423,7 +423,6 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 0.8rem;
   }
 
   .email-list, .social-links {
@@ -452,57 +451,57 @@ footer a:hover {
   }
 
   iframe {
-    height: 200px;
+    height: 180px;
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-    height: 28px;
+    height: 25px;
   }
 
   .logo-title h1 {
-    font-size: 1.1rem;
-  }
-
-  iframe {
-    height: 180px;
-  }
-
-  section {
-    padding: 0.8rem;
-  }
-
-  section h2 {
-    font-size: 1.2rem;
-  }
-
-  section h3 {
     font-size: 1rem;
   }
 
-  section p, section li {
-    font-size: 0.85rem;
+  iframe {
+    height: 140px;
   }
 
-  .sidebar ul li a {
+  section {
+    padding: 0.6rem;
+  }
+
+  section h2 {
+    font-size: 1.1rem;
+  }
+
+  section h3 {
     font-size: 0.9rem;
   }
 
+  section p, section li {
+    font-size: 0.8rem;
+  }
+
+  .sidebar ul li a {
+    font-size: 0.85rem;
+  }
+
   .footer-content {
-    padding: 0.5rem;
+    padding: 0.4rem;
   }
 
   footer .social-icon {
-    height: 25px;
-    width: 35px;
+    height: 20px;
+    width: 30px;
   }
 
   .email-list li {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   footer p:last-child {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 }
