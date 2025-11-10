@@ -80,6 +80,10 @@ body {
   50% { border-color: #005baa; }
 }
 
+.texto-justificado {
+  text-align: justify;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
